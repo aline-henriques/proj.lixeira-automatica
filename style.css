@@ -1,9 +1,12 @@
-/* Reset para as formatações iniciais */
+/* Reset das formatações iniciais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Estilo geral da página */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -12,7 +15,7 @@ body {
     line-height: 1.6;
 }
 
-/* Estilo para o cabeçalho da página */
+/* Estilo cabeçalho da página */
 
 header {
     background: rgb(2, 0, 36);
@@ -41,7 +44,7 @@ header p {
     margin: 10px 0;
 }
 
-.cta-button {
+.saibamais-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: darkgreen;
@@ -50,13 +53,14 @@ header p {
     text-decoration: none;
     font-weight: 500;
     margin-top: 40px;
-    animation: ;
 }
 
-.cta-button:hover {
+.saibamais-button:hover {
     background-color: rgba(0, 100, 0, 0.808);
     transition: 0.5s;
 }
+
+/* Estilo para os conteúdos gerais da página */
 
 section {
     max-width: 800px;
@@ -65,15 +69,17 @@ section {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: float 3s ease-in-out infinite; /* Aplicando a animação flutuante */
+    animation: float 3s ease-in-out infinite; 
 }
+
+/* Animação flutuante para todas as seções */
 
 @keyframes float {
     0% {
         transform: translatey(0px);
     }
     50% {
-        transform: translatey(-10px); /* Altura do movimento para cima */
+        transform: translatey(-10px); 
     }
     100% {
         transform: translatey(0px);
@@ -112,7 +118,9 @@ nav a:hover {
     transition: 0.5s;
 }
 
-.description-box,
+/* Adicionando gradiente nas boxs */
+
+.descricao-box,
 #equipe {
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(8, 119, 51, 0.574) 0%, rgb(43, 219, 113) 51.5%, rgb(44, 237, 89) 88.6% );
     padding: 15px;
@@ -145,7 +153,9 @@ nav a:hover {
     margin-right: 10px;
 }
 
-.download-btn {
+/* Estilo para o botão de download */
+
+.download-button {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -156,12 +166,13 @@ nav a:hover {
     font-weight: 500;
 }
 
-.download-btn:hover {
+.download-button:hover {
     background-color: #3b389a;
     transition: 0.5s;
 }
 
 /* Estilo para a seção da equipe */
+
 #equipe {
     display: flex;
     flex-wrap: wrap;
@@ -169,27 +180,27 @@ nav a:hover {
     gap: 20px;
 }
 
-.team-member {
+.membros {
     width: 200px;
     text-align: center;
     margin: 20px;
 }
 
-.team-member img {
+.membros img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
-.team-member a {
+.membros a {
     color: white; 
     font-size: 1.5em; 
     margin: 0 5px;
     transition: color 0.3s ease; 
 }
 
-.team-member a:hover {
+.membros a:hover {
     color: #dfc8c8a7; 
     transform: scale(1.2); 
 }
@@ -212,7 +223,7 @@ footer {
     margin-top: 30px;
 }
 
-/* Estilo para rolagem */
+/* Estilo para rolagem suave */
 
 .fade-in {
     opacity: 0; 
@@ -226,6 +237,7 @@ footer {
 }
 
 /* Responsividade */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2em;
