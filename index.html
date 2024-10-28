@@ -10,27 +10,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
+ 
+    <!-- Cabecalho -->
     <header>
         <nav>
             <a href="#descricao">Sobre</a>
             <a href="#equipe">Equipe</a>
         </nav>
         <div class="overlay">
-            <h1>Lixeira Automática com Arduino</h1>
+            <h1>Lixeira Automática com Arduíno</h1>
             <p>Soluções higiênicas e automáticas para o descarte de lixo sem contato!</p>
-            <a href="#descricao" class="cta-button">Saiba Mais ⭣</a>
+            <a href="#descricao" class="saibamais-button">Saiba Mais ⭣</a>
         </div>
     </header>
 
+    <!-- Seção descrição, objetivos e contextualização -->
     <section id="descricao" class="fade-in">
         <h2><i class="fas fa-lightbulb"></i>     Descrição e Objetivos</h2>
-        <div class="description-box">
+        <div class="descricao-box">
             <h3>Motivação</h3>
             <p>Criamos uma solução prática e higiênica para o descarte de lixo automático.</p>
         </div>
         
-        <div class="description-box">
+        <div class="descricao-box">
             <h3>Objetivo</h3>
             <ul>
                 <li>Automação e praticidade no descarte do lixo.</li>
@@ -39,12 +41,13 @@
             </ul>
         </div>
         
-        <div class="description-box">
+        <div class="descricao-box">
             <h3>Contextualização</h3>
             <p>O projeto é ideal para ambientes domésticos, comerciais ou públicos, pois reduz a disseminação de germes e aumenta a praticidade.</p>
         </div>
     </section>
 
+    <!-- Seção do funcionamento -->
     <section id="funcionamento" class="fade-in">
         <h2><i class="fas fa-cogs"></i>          Lógica de Funcionamento</h2>
         <p>Entenda como funciona a lixeira automática:</p>
@@ -63,28 +66,12 @@
         <h3>Código Arduino completo:</h3>
         <pre>
             <code>
-#include &lt;Servo.h&gt;
-Servo servo;
-
-int sensor = 7;
-int estadoSensor;
-
-void setup() {
-    servo.attach(9);
-    pinMode(sensor, INPUT);
-}
-
-void loop() {
-    estadoSensor = digitalRead(sensor);
-    if (estadoSensor == HIGH) {
-        servo.write(90); // abre a tampa
-        delay(5000); // espera 5 segundos
-        servo.write(0); // fecha a tampa
-    }
+Código Arduino
             </code>
         </pre>
     </section>
 
+    <!-- Seção do tutorial em vídeo-->
     <section id="tutorial" class="fade-in">
         <h2><i class="fas fa-video"></i>                   Vídeo Tutorial</h2>
         <p>Veja o processo de montagem passo a passo no vídeo abaixo:</p>
@@ -93,53 +80,58 @@ void loop() {
         </video>
     </section>
 
+    <!-- Seção dos componentes -->
     <section id="componentes" class="fade-in">
         <h2><i class="fas fa-toolbox"></i>                  Componentes</h2>
         <p>Plataformas e ferramentas usadas:</p>
-        <ul class="component-list">
+        <ul class="componentes-list">
             <li>CANVA (versão 4.133.0); VS CODE (versão 1.94); ARDUINO IDE (versão 1.8.19)</li>
-            <li>Suprimentos: Arduino, sensor de proximidade, servo motor, entre outros.</li>
+            <li> <strong>Suprimentos: </strong> Arduino, sensor de proximidade, servo motor, entre outros.</li>
         </ul> 
     </section>
 
+    <!-- Seção do download do projeto -->
     <section id="download" class="fade-in">
         <h2><i class="fas fa-download"></i>                  Download do Projeto</h2>
         <p>Clique aqui para acessar todos os arquivos do projeto:</p>
-        <a href="projeto.zip" download class="download-btn">Baixar Projeto</a>
+        <a href="https://drive.google.com/drive/folders/14fGTtr48KnMGVLWsgSjTgx76MBlKs2OU?usp=sharing" download class="download-button">Baixar Projeto</a>
     </section>
 
+    <!-- Seção da equipe -->
     <section id="equipe" class="fade-in">
         <h2><i class="fas fa-users"></i>                     Equipe</h2>
-        <div class="team-member">
-            <img src="imagens/aline.png" alt="Foto do integrante 1">
+        <div class="membros">
+            <img src="imagens/aline.png" alt="Integrante 1">
             <p><strong>Aline Henriques</strong></p>
             <a href="https://linkedin.com/aline-henriques"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/aline-henriques"><i class="fab fa-github"></i></a>
         </div>
-        <div class="team-member">
-            <img src="imagens/bruno.png" alt="Foto do integrante 2">
+        <div class="membros">
+            <img src="imagens/bruno.png" alt="Integrante 2">
             <p><strong>Bruno Henrique</strong></p>
             <a href="https://linkedin.com/integrante2"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/integrante2"><i class="fab fa-github"></i></a>
         </div>
-        <div class="team-member">
-            <img src="imagens/glauco.png" alt="Foto do integrante 3">
+        <div class="membros">
+            <img src="imagens/glauco.png" alt="Integrante 3">
             <p><strong>Glauco Santos</strong></p>
             <a href="https://linkedin.com/aline-henriques"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/aline-henriques"><i class="fab fa-github"></i></a>
         </div>
-        <div class="team-member">
-            <img src="imagens/pedro.png" alt="Foto do integrante 4">
+        <div class="membros">
+            <img src="imagens/pedro.png" alt="Integrante 4">
             <p><strong>Pedro Souza</strong></p>
             <a href="https://linkedin.com/aline-henriques"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/aline-henriques"><i class="fab fa-github"></i></a>
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2023 Lixeira Automática com Arduino. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Link para o JavaScript -->
     <script src="script.js"></script>
 
 </body>
