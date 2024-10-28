@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lixeira Automática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#descricao">Sobre</a>
+            <a href="#equipe">Equipe</a>
+        </nav>
+        <div class="overlay">
+            <h1>Lixeira Automática com Arduino</h1>
+            <p>Soluções higiênicas e automáticas para o descarte de lixo sem contato!</p>
+            <a href="#descricao" class="cta-button">Saiba Mais ⭣</a>
+        </div>
+    </header>
+
+    <section id="descricao" class="fade-in">
+        <h2><i class="fas fa-lightbulb"></i>     Descrição e Objetivos</h2>
+        <div class="description-box">
+            <h3>Motivação</h3>
+            <p>Criamos uma solução prática e higiênica para o descarte de lixo automático.</p>
+        </div>
+        
+        <div class="description-box">
+            <h3>Objetivo</h3>
+            <ul>
+                <li>Automação e praticidade no descarte do lixo.</li>
+                <li>Priorizar higiene, evitando contato com a lixeira.</li>
+                <li>Educação tecnológica para estimular o aprendizado.</li>
+            </ul>
+        </div>
+        
+        <div class="description-box">
+            <h3>Contextualização</h3>
+            <p>O projeto é ideal para ambientes domésticos, comerciais ou públicos, pois reduz a disseminação de germes e aumenta a praticidade.</p>
+        </div>
+    </section>
+
+    <section id="funcionamento" class="fade-in">
+        <h2><i class="fas fa-cogs"></i>          Lógica de Funcionamento</h2>
+        <p>Entenda como funciona a lixeira automática:</p>
+        <div class="step">
+            <span>1</span>
+            <p>O sensor detecta a proximidade de um objeto.</p>
+        </div>
+        <div class="step">
+            <span>2</span>
+            <p>O Arduino envia um sinal para abrir a tampa.</p>
+        </div>
+        <div class="step">
+            <span>3</span>
+            <p>Após alguns segundos, a tampa fecha automaticamente.</p>
+        </div>
+        <h3>Código Arduino completo:</h3>
+        <pre>
+            <code>
+#include &lt;Servo.h&gt;
+Servo servo;
+
+int sensor = 7;
+int estadoSensor;
+
+void setup() {
+    servo.attach(9);
+    pinMode(sensor, INPUT);
+}
+
+void loop() {
+    estadoSensor = digitalRead(sensor);
+    if (estadoSensor == HIGH) {
+        servo.write(90); // abre a tampa
+        delay(5000); // espera 5 segundos
+        servo.write(0); // fecha a tampa
+    }
+            </code>
+        </pre>
+    </section>
+
+    <section id="tutorial" class="fade-in">
+        <h2><i class="fas fa-video"></i>                   Vídeo Tutorial</h2>
+        <p>Veja o processo de montagem passo a passo no vídeo abaixo:</p>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="componentes" class="fade-in">
+        <h2><i class="fas fa-toolbox"></i>                  Componentes</h2>
+        <p>Plataformas e ferramentas usadas:</p>
+        <ul class="component-list">
+            <li>CANVA (versão 4.133.0); VS CODE (versão 1.94); ARDUINO IDE (versão 1.8.19)</li>
+            <li>Suprimentos: Arduino, sensor de proximidade, servo motor, entre outros.</li>
+        </ul> 
+    </section>
+
+    <section id="download" class="fade-in">
+        <h2><i class="fas fa-download"></i>                  Download do Projeto</h2>
+        <p>Clique aqui para acessar todos os arquivos do projeto:</p>
+        <a href="projeto.zip" download class="download-btn">Baixar Projeto</a>
+    </section>
+
+    <section id="equipe" class="fade-in">
+        <h2><i class="fas fa-users"></i>                     Equipe</h2>
+        <div class="team-member">
+            <img src="imagens/aline.png" alt="Foto do integrante 1">
+            <p><strong>Aline Henriques</strong></p>
+            <a href="https://linkedin.com/aline-henriques"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aline-henriques"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="team-member">
+            <img src="imagens/bruno.png" alt="Foto do integrante 2">
+            <p><strong>Bruno Henrique</strong></p>
+            <a href="https://linkedin.com/integrante2"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/integrante2"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="team-member">
+            <img src="imagens/glauco.png" alt="Foto do integrante 3">
+            <p><strong>Glauco Santos</strong></p>
+            <a href="https://linkedin.com/aline-henriques"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aline-henriques"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="team-member">
+            <img src="imagens/pedro.png" alt="Foto do integrante 4">
+            <p><strong>Pedro Souza</strong></p>
+            <a href="https://linkedin.com/aline-henriques"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aline-henriques"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Lixeira Automática com Arduino. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
