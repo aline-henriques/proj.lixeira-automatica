@@ -112,8 +112,6 @@ nav a:hover {
     transition: 0.5s;
 }
 
-/* Adicionando gradiente em todas as boxs*/
-
 .description-box,
 #equipe {
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(8, 119, 51, 0.574) 0%, rgb(43, 219, 113) 51.5%, rgb(44, 237, 89) 88.6% );
