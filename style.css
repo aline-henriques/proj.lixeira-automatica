@@ -212,6 +212,14 @@ nav a:hover {
     color: white
 }
 
+#tutorial p {
+    margin-bottom: 10px;
+}
+
+#prototipo p {
+    margin-bottom: 10px;
+}
+
 /* Estilo para o rodapé */
 
 footer {
