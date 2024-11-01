@@ -143,14 +143,14 @@ nav a:hover {
 .step {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .step span {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 700;
     color: green;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 /* Estilo para o botão de download */
@@ -217,6 +217,13 @@ nav a:hover {
 }
 
 #prototipo p {
+    margin-bottom: 10px;
+}
+
+#prototipo img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
     margin-bottom: 10px;
 }
 
