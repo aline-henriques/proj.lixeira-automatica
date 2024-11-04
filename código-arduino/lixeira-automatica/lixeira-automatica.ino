@@ -2,7 +2,6 @@
 
 int distancia = 0;
 
-// Função para ler a distância do sensor ultrassônico
 long readUltrasonicDistance(int triggerPin, int echoPin) {
   pinMode(triggerPin, OUTPUT);
   digitalWrite(triggerPin, LOW);
@@ -21,14 +20,13 @@ void setup() {
 }
 
 void loop() {
-  // Calcula a distância em cm
   distancia = 0.01723 * readUltrasonicDistance(7, 6);
-  servo_9.write(0); // Fecha a tampa da lixeira
-  delay(300); // Aguarda 300 ms
+  servo_9.write(0);
+  delay(300);
 
   while (distancia <= 20) {
-    servo_9.write(180); // Abre a tampa
-    delay(6000); // Mantém a tampa aberta por 6 segundos
-    distancia = 0.01723 * readUltrasonicDistance(7, 6); // Atualiza a distância
+    servo_9.write(180);
+    delay(6000);
+    distancia = 0.01723 * readUltrasonicDistance(7, 6);
   }
 }
