@@ -82,8 +82,39 @@
 
         <h3>Código Arduino completo:</h3>
         <pre>
-            <code>
-Código Arduino
+            <code id="code">
+            #include <Servo.h>
+
+                int distancia = 0;
+                    
+                    long readUltrasonicDistance(int triggerPin, int echoPin) {
+                      pinMode(triggerPin, OUTPUT);
+                      digitalWrite(triggerPin, LOW);
+                      delayMicroseconds(2);
+                      digitalWrite(triggerPin, HIGH);
+                      delayMicroseconds(10);
+                      digitalWrite(triggerPin, LOW);
+                      pinMode(echoPin, INPUT);
+                      return pulseIn(echoPin, HIGH);
+                    }
+                    
+                    Servo servo_9;
+                    
+                    void setup() {
+                      servo_9.attach(9, 500, 2500);
+                    }
+                    
+                    void loop() {
+                      distancia = 0.01723 * readUltrasonicDistance(7, 6);
+                      servo_9.write(0);
+                      delay(300);
+                    
+                      while (distancia <= 20) {
+                        servo_9.write(180);
+                        delay(6000);
+                        distancia = 0.01723 * readUltrasonicDistance(7, 6);
+                      }
+                    }                    
             </code>
         </pre>
     </section>
@@ -115,6 +146,7 @@ Código Arduino
             <li>1 unid - Micro Servo</li> 
             <li>1 unid - Placa de Ensaio Breadboard/Protoboard</li>
             <li>7 unid - Fios Jumpers</li>
+            <li>1 unid - Lixeira de plástico</li>
         </ul> 
     </section>
 
@@ -154,13 +186,23 @@ Código Arduino
         </div>
     </section>
 
+    <section id="galeria" class="galeria">
+        <h2><i class="fa-brands fa-envira"></i>                           Imagens do projeto</h2>
+        <div class="galeria-container">
+            <img src="imagens/lixeira.webp" alt="Imagens da lixeira">
+            <img src="imagens/lixeira.webp" alt="Imagens da lixeira 2">
+            <img src="imagens/lixeira.webp" alt="Imagens da lixeira 3">
+        </div>
+    </section>
+
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2023 Lixeira Automática com Arduino. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Link para o JavaScript -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 
 </body>
 </html>
