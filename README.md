@@ -12,7 +12,10 @@ A Lixeira Automática foi projetada para abrir e fechar automaticamente ao detec
 Responsável  por todas as etapas de desenvolvimento e documentação do projeto.
 
 Aline de Albuquerque Henriques
+
 Bruno Henrique Leite Braga
+
 Glauco Santos Seixas Cerqueira
+
 Pedro Augusto de Souza
 
