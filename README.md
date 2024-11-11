@@ -1,6 +1,6 @@
 # Projeto Lixeira Automática com Arduino 
 
-Desenvolvido pelos alunos de Analise e Desenvolvimento de Sistemas, 1º período - Cesar School, para a disciplina de Sistemas Digitais e Introdução a Computação
+Desenvolvido pelos alunos de Analise e Desenvolvimento de Sistemas, 1º período - Cesar School, para a disciplina de Sistemas Digitais e Introdução a Computação.
 
 Site desenvolvido em HTML, CSS e JavaScript para apresentação do projeto. 
 
