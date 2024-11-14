@@ -26,7 +26,7 @@ void loop() {
 
   while (distancia <= 20) {
     servo_9.write(180);
-    delay(6000);
+    delay(2000);
     distancia = 0.01723 * readUltrasonicDistance(7, 6);
   }
 }
