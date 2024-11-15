@@ -2,13 +2,12 @@
 
 A Lixeira Automática foi projetada para abrir e fechar automaticamente ao detectar a presença de um usuário próximo. Utilizando sensores ultrassônicos conectados a um Arduino, o sistema é capaz de reconhecer a proximidade e acionar a tampa da lixeira. Esse projeto visa promover uma solução prática e higiênica para o descarte de resíduos.
 
-# Sumário
-
-	•	Componentes (###componentes)
-	•	Montagem do Circuito (###montagem-do-circuito)
-	•	Instalação e Configuração (###instalacao-e-configuracao)
-	•	Código (###codigo)
-	•	Equipe (###equipe)
+	## Sumário
+- [Componentes](#componentes)
+- [Montagem do Circuito](#montagem-do-circuito)
+- [Instalação e Configuração](#instalação-e-configuração)
+- [Código](#código)
+- [Equipe](#equipe)
 
 ### Componentes
 
