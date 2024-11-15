@@ -2,16 +2,18 @@
 
 A Lixeira Automática foi projetada para abrir e fechar automaticamente ao detectar a presença de um usuário próximo. Utilizando sensores ultrassônicos conectados a um Arduino, o sistema é capaz de reconhecer a proximidade e acionar a tampa da lixeira. Esse projeto visa promover uma solução prática e higiênica para o descarte de resíduos.
 
-	## Sumário
+## Sumário
 - [Componentes](#componentes)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [Instalação e Configuração](#instalação-e-configuração)
 - [Código](#código)
 - [Equipe](#equipe)
 
+
 ### Componentes
 
 Para construir este projeto, você precisará dos seguintes componentes:
+
     •   Arduino Uno R3
     •   Sensor Ultrassônico HC-SR04
     •   Micro Servo Motor
@@ -19,9 +21,11 @@ Para construir este projeto, você precisará dos seguintes componentes:
     •   Fios Jumpers
     •   Lixeira de plástico
 
+
 ### Montagem do Circuito
 
 Conecte os componentes conforme abaixo:
+
 	1.	Sensor Ultrassônico HC-SR04
 	•	Trigger Pin (TRIG): Conecte ao pino digital 7 no Arduino.
 	•	Echo Pin (ECHO): Conecte ao pino digital 6 no Arduino.
@@ -32,11 +36,13 @@ Conecte os componentes conforme abaixo:
 	•	VCC: Conecte ao pino de 5V no Arduino.
 	•	GND: Conecte ao pino GND no Arduino.
 
+
 Descrição do Funcionamento
 
 	•	O sensor ultrassônico utiliza os pinos 7 (Trigger) e 6 (Echo) para medir a distância de objetos à frente da lixeira.
 	•	Quando a distância lida pelo sensor é menor ou igual a 20 cm, o servo motor, conectado ao pino 9, abre a tampa da lixeira, movendo-se para 180 graus.
 	•	Após alguns segundos, se nenhum objeto for detectado próximo, a tampa retorna à posição inicial (0 graus).
+
 
 
 ### Instalação e Configuração
@@ -45,7 +51,9 @@ Descrição do Funcionamento
 	2.	Conecte o Arduino ao seu computador através do cabo USB.
 	3.	Certifique-se de que todos os componentes estão conectados corretamente de acordo com o esquema do circuito.
 
+
 ### Código
+
 #include <Servo.h>
 
 int distancia = 0;
@@ -78,6 +86,7 @@ void loop() {
     distancia = 0.01723 * readUltrasonicDistance(7, 6);
   }
 }
+
 
 ### Equipe
 Aline Henriques - FrontEnd, VídeoMaker, organização e prototipação.
