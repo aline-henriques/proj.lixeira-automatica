@@ -263,12 +263,6 @@ h2 {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.galeria-container img:hover {
-    transform: scale(1.05);
-    cursor: url(imagens/envira-brands-solid.svg), auto;
 }
 
   
