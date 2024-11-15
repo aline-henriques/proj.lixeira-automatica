@@ -58,7 +58,7 @@ Descrição do Funcionamento
 
 # Código
 
-
+```cpp
 #include <Servo.h>
 
 int distancia = 0;
@@ -97,7 +97,7 @@ void loop() {
 
 
 # Equipe
-    • Aline Henriques - FrontEnd, VídeoMaker, organização e prototipação.
-    • Bruno Henrique Leite Braga - HardWare 
-    • Glauco Santos Cerqueira Seixas - HardWare 
-    • Pedro Augusto Cavalcanti de Souza - Auxiliar de montagem e organização, tester
+- **Aline Henriques**: Frontend, criação de vídeos, organização e prototipação.
+- **Bruno Henrique Leite Braga**: Hardware
+- **Glauco Santos Cerqueira Seixas**: Hardware
+- **Pedro Augusto Cavalcanti de Souza**: Auxílio na montagem, organização e testes
