@@ -94,9 +94,6 @@ void loop() {
 }
 
 
-
-
-# Equipe
 - **Aline Henriques**: Frontend, criação de vídeos, organização e prototipação.
 - **Bruno Henrique Leite Braga**: Hardware
 - **Glauco Santos Cerqueira Seixas**: Hardware
