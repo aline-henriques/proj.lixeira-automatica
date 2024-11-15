@@ -92,7 +92,7 @@ void loop() {
   }
 
 }
-
+```
 
 - **Aline Henriques**: Frontend, criação de vídeos, organização e prototipação.
 - **Bruno Henrique Leite Braga**: Hardware
