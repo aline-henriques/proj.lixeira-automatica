@@ -11,8 +11,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
-    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgba(163,217,185,1) 51.5%, rgba(255,252,247,1) 88.6% );
+    background-image: linear-gradient(180deg, rgba(255, 252, 247, 1) 0%, rgba(163, 217, 185, 1) 50%, rgba(163, 217, 185, 1) 100%);
     line-height: 1.6;
+    
 }
 
 /* Estilo cabeçalho da página */
@@ -121,7 +122,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Adicionando gradiente nas boxs */
+/* Estilo para a seção de descrição */
 
 .descricao-box,
 #equipe {
@@ -155,6 +156,48 @@ h2 {
     color: green;
     margin-right: 15px;
 }
+
+/* Estilo para a seção Desafios */
+#desafios {
+    margin-top: 10px;
+    background-color: white
+}
+
+#desafios .titulo {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.desafio-item {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.desafio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.desafio-titulo {
+    font-size: 1.5rem;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.desafio-descricao {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 
 /* Estilo para o botão de download */
 
@@ -218,8 +261,19 @@ h2 {
 }
 
 
-#tutorial p {
-    margin-bottom: 10px;
+/* Estilo para o tutorial */
+
+#video-link {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#tutorial video {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;  
 }
 
 #prototipo p {
@@ -233,16 +287,11 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Estilo para a galeria */
 
-/* Estilo para o código */
-#code {
-    color: black;
-}
-
-/* Estilos para a galeria */
 .galeria {
-    padding: 40px;
-    background-color:  rgba(0, 100, 0, 0.159);
+    padding: 30px;
+    background-color: white;
     text-align: center;
 }
 
@@ -264,7 +313,6 @@ h2 {
     height: auto;
     border-radius: 8px;
 }
-
   
 /* Estilo para o rodapé */
 
@@ -308,4 +356,25 @@ footer {
     .section {
         padding: 10px;
     }
+}
+
+/* Estilo para a barra de progresso */
+
+#progress-container {
+    width: 100%; 
+    height: 5px; 
+    background-color: #ddd;
+    border-radius: 10px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%; 
+    background-color: #4caf50; 
+    border-radius: 10px;
+    transition: width 0.1s ease; 
 }
