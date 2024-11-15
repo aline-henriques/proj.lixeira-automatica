@@ -10,6 +10,7 @@ A Lixeira Automática foi projetada para abrir e fechar automaticamente ao detec
 - [Equipe](#equipe)
 
 
+
 ### Componentes
 
 Para construir este projeto, você precisará dos seguintes componentes:
@@ -20,6 +21,7 @@ Para construir este projeto, você precisará dos seguintes componentes:
     •   Protoboard
     •   Fios Jumpers
     •   Lixeira de plástico
+
 
 
 ### Montagem do Circuito
@@ -45,6 +47,7 @@ Descrição do Funcionamento
 
 
 
+
 ### Instalação e Configuração
 
 	1.	Baixe e Instale o Arduino IDE para escrever e carregar o código.
@@ -52,7 +55,9 @@ Descrição do Funcionamento
 	3.	Certifique-se de que todos os componentes estão conectados corretamente de acordo com o esquema do circuito.
 
 
+
 ### Código
+
 
 #include <Servo.h>
 
@@ -85,11 +90,14 @@ void loop() {
     delay(2000);
     distancia = 0.01723 * readUltrasonicDistance(7, 6);
   }
+
 }
 
 
+
+
 ### Equipe
-Aline Henriques - FrontEnd, VídeoMaker, organização e prototipação.
-Bruno Henrique Leite Braga - HardWare 
-Glauco Santos Cerqueira Seixas - HardWare 
-Pedro Augusto Cavalcanti de Souza - Auxiliar de montagem e organização, tester
+    • Aline Henriques - FrontEnd, VídeoMaker, organização e prototipação.
+    • Bruno Henrique Leite Braga - HardWare 
+    • Glauco Santos Cerqueira Seixas - HardWare 
+    • Pedro Augusto Cavalcanti de Souza - Auxiliar de montagem e organização, tester
