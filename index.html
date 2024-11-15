@@ -47,6 +47,34 @@
         </div>
     </section>
 
+    <!-- Seção dos desafios -->
+    <section id="desafios" class="section">
+        <div class="container">
+            <h2 class="titulo"><i class="fa-solid fa-bolt"></i>                 Desafios</h2>
+            <div class="desafios-grid">
+                <div class="desafio-item">
+                    <h3 class="desafio-titulo">1. Problemas com o gerenciamento de dispositivos:</h3>
+                    <p class="desafio-descricao">
+                        Nossa equipe enfrentou dificuldades na seleção da porta de comunicação. Por se tratar de uma tarefa nova e desconhecida, o desafio foi ainda maior. No entanto, conseguimos solucioná-lo após pesquisar e instalar um driver necessário, disponível no site oficial da marca RoboCop (do kit utilizado). Após a instalação do driver, extraímos os arquivos e instalamos o programa no computador, o que permitiu acessar e utilizar as portas específicas no Gerenciador de Dispositivos. Assim, foi possível escolher a porta correta nas “Ferramentas” do Arduino IDE
+                    </p>
+                </div>
+                <div class="desafio-item">
+                    <h3 class="desafio-titulo">2. Montagem e implementação do sistema na lixeira:</h3>
+                    <p class="desafio-descricao">
+                        Outro desafio foi fixar o sistema de forma cuidadosa e esteticamente agradável, sem danificar nenhum componente do kit ou desconectar fios. Após um tempo planejando, decidimos parafusar a placa Arduino e o protoboard em um pedaço de papelão grosso. Fizemos pequenos furos nas laterais da lixeira, permitindo prender os componentes com enforca-gatos, uma vez que a instituição não permite fixações permanentes, evitando danos aos equipamentos.
+                    </p>
+                </div>
+                <div class="desafio-item">
+                    <h3 class="desafio-titulo">3. Desorientação com a infinidade de materiais desconhecidos no laboratório Garagino:</h3>
+                    <p class="desafio-descricao">
+                        Devido à vasta quantidade de materiais e ferramentas desconhecidas, a equipe precisou parar para refletir e analisar o que seria necessário para o projeto. Um exemplo disso foi a decisão sobre como fixar o sistema na pequena lixeira, algo que nenhum de nós havia feito antes. Esse momento de reflexão foi essencial para escolhermos os materiais adequados e garantir a funcionalidade e segurança do sistema.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
     <!-- Seção do funcionamento -->
     <section id="funcionamento" class="fade-in">
         <h2><i class="fas fa-cogs"></i>          Lógica de Funcionamento</h2>
@@ -122,12 +150,13 @@
     <!-- Seção do tutorial em vídeo-->
     <section id="tutorial" class="fade-in">
         <h2><i class="fas fa-video"></i>                   Vídeo Tutorial</h2>
-        <p>Veja o processo de montagem passo a passo no vídeo abaixo:</p>
+        <a href="https://youtu.be/USpLy6pKqVA" id="video-link">Vídeo no YouTube!</a>
     <video controls>
-        <source src="imagens/video-output-822D620F-312B-4931-AEC5-4559B5B36351.mp4" type="video/mp4"
+        <source src="imagens/video-tutorial.mp4" allowfullscreen type="video/mp4"
             </video>
     </section>
 
+    <!-- Seção do protótipo -->
     <section id="prototipo" class="fade-in">
         <h2><i class="fa-solid fa-image"></i>                   Protótipo</h2>
         <p>Veja a protótipo do nosso Arduíno: </p>
@@ -141,12 +170,12 @@
         <ul class="componentes-list">
             <li>CANVA (versão 4.133.0);<br>Vs Code (versão 1.94);<br>Arduino IDE (versão 1.8.19);</li>
             <li><strong>Suprimentos:</strong></li></li>
-            <li>1 unid - Sensor Ultrassônico (HC-SR04)
-            <li>1 unid - Arduino UNO R3</li>
-            <li>1 unid - Micro Servo</li> 
-            <li>1 unid - Placa de Ensaio Breadboard/Protoboard</li>
-            <li>7 unid - Fios Jumpers</li>
-            <li>1 unid - Lixeira de plástico</li>
+            <li>Sensor Ultrassônico (HC-SR04)
+            <li>Arduino UNO R3</li>
+            <li>Micro Servo</li> 
+            <li>Placa de Ensaio Breadboard/Protoboard</li>
+            <li>Fios Jumpers</li>
+            <li>Lixeira de plástico</li>
         </ul> 
     </section>
 
@@ -185,10 +214,11 @@
         </div>
     </section>
 
+    <!-- Seção da galeria -->
     <section id="galeria" class="galeria">
         <h2><i class="fa-brands fa-envira"></i>                           Imagens do projeto</h2>
         <div class="galeria-container">
-            <img src="imagens/IMG_4416.jpeg" alt="Imagens da lixeira">
+            <img src="imagens/IMG_4416 (1).jpeg" alt="Imagens da lixeira">
             <img src="imagens/IMG_4421.jpeg" alt="Imagens da lixeira 2">
             <img src="imagens/IMG_4418.jpeg" alt="Imagens da lixeira 3">
         </div>
@@ -199,9 +229,13 @@
         <p>&copy; 2024 Lixeira Automática com Arduino. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Barra de Progresso -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <!-- JavaScript -->
     <script src="script.js"></script>
-
 
 </body>
 </html>
