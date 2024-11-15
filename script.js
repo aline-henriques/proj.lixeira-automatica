@@ -14,3 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
     checkVisibility(); 
 });
 
+function updateProgressBar() {
+    const documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPosition = window.scrollY;
+    const scrollProgress = (scrollPosition / documentHeight) * 100;
+    const progressBar = document.getElementById('progress-bar');
+    progressBar.style.width = scrollProgress + '%';
+}
+
+window.onscroll = function() {
+    updateProgressBar();
+};
