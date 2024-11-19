@@ -5,7 +5,7 @@ A Lixeira Automática foi projetada para abrir e fechar automaticamente ao detec
 
 ## Sumário
 
-    - [Componentes](#componentes)
+- [Componentes](#componentes)
     - [Montagem do Circuito](#montagem-do-circuito)
     - [Instalação e Configuração](#instalacao-e-configuracao)
     - [Código](#codigo)
