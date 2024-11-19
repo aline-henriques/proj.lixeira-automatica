@@ -79,34 +79,34 @@
     <section id="funcionamento" class="fade-in">
         <h2><i class="fas fa-cogs"></i>          Lógica de Funcionamento</h2>
         <p>Entenda como funciona a lixeira automática:</p>
-        <div class="step">
-            <span>1</span>
-            <p>Biblioteca: 'Servo.h' controla o motor servo.</p>
-        </div>
-        <div class="step">
-            <span>2</span>
-            <p>Variável: 'distancia = 0' armazena a distância do sensor.</p>
-        </div>
-        <div class="step">
-            <span>3</span>
-            <p>Função: 'readUltrasonicDistance': Mede a distância com o sensor ultrassônico, emitindo um pulso de 10 microssegundos e retornando o tempo para calcular a distância.</p>
-        </div>
-        <div class="step">
-            <span>4</span>
-            <p>Setup: Conecta o servo ao pino 9, configurando um intervalo de pulso de 500 a 2500 microssegundos </p>
-        </div>
-        <div class="step">
-            <span>5</span>
-            <p>Loop: Mede a distância em cm, fecha a tampa ('servo_9.write(0)') e aguarda 300 ms.</p>
-        </div>
-        <div class="step">
-            <span>6</span>
-            <p>While Loop: Se a distância ≤ 20 cm, abre a tampa ('servo_9.write(180)') por 2 segundos, atualizando a distância.</p>
-        </div>
-        <div class="step">
-            <span>7</span>
-            <p>Fechamento: Se a distância > 20 cm, o loop termina e a tampa fecha até nova aproximação.</p>
-        </div>
+     <div class="step">
+    <span>1</span>
+    <p>Biblioteca: 'Servo.h' controla o motor servo.</p>
+</div>
+<div class="step">
+    <span>2</span>
+    <p>Variável: 'distancia = 0' armazena a distância do sensor.</p>
+</div>
+<div class="step">
+    <span>3</span>
+    <p>Função: 'readUltrasonicDistance': Mede a distância com o sensor ultrassônico, emitindo um pulso de 10 microssegundos e retornando o tempo para calcular a distância.</p>
+</div>
+<div class="step">
+    <span>4</span>
+    <p>Setup: Conecta o servo ao pino 9, configurando um intervalo de pulso de 500 a 2500 microssegundos.</p>
+</div>
+<div class="step">
+    <span>5</span>
+    <p>Loop: Mede a distância em cm, fecha a tampa ('servo_9.write(0)') e aguarda 300 ms.</p>
+</div>
+<div class="step">
+    <span>6</span>
+    <p>While Loop: Se a distância ≤ 20 cm, abre a tampa ('servo_9.write(180)') por 2 segundos, atualizando a distância e emitindo um som de agradecimento.</p>
+</div>
+<div class="step">
+    <span>7</span>
+    <p>Fechamento: Se a distância > 20 cm, o loop termina e a tampa fecha até nova aproximação.</p>
+</div>
 
         <h3>Código Arduino completo:</h3>
         <pre>
@@ -186,6 +186,7 @@ void playThankYouSound() {
             <li>Micro Servo</li> 
             <li>Placa de Ensaio Breadboard/Protoboard</li>
             <li>Fios Jumpers</li>
+            <li>Buzzer</li>
             <li>Lixeira de plástico</li>
         </ul> 
     </section>
