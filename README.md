@@ -31,27 +31,27 @@ Para construir este projeto, você precisará dos seguintes componentes:
 Conecte os componentes conforme abaixo:
 
         1. Sensor Ultrassônico HC-SR04
-           - Trigger Pin (TRIG): Conecte ao pino digital 7 no Arduino.  
-           - Echo Pin (ECHO): Conecte ao pino digital 6 no Arduino.  
-           - VCC: Conecte ao pino de 5V no Arduino.  
-           - GND: Conecte ao pino GND no Arduino.
+        Trigger Pin (TRIG): Conecte ao pino digital 7 no Arduino.  
+        Echo Pin (ECHO): Conecte ao pino digital 6 no Arduino.  
+        VCC: Conecte ao pino de 5V no Arduino.  
+        GND: Conecte ao pino GND no Arduino.
 
         2. Servo Motor
-           - Sinal: Conecte ao pino digital 9 no Arduino.  
-           - VCC: Conecte ao pino de 5V no Arduino.  
-           - GND: Conecte ao pino GND no Arduino.
+        Sinal: Conecte ao pino digital 9 no Arduino.  
+        VCC: Conecte ao pino de 5V no Arduino.  
+        GND: Conecte ao pino GND no Arduino.
 
         3. Buzzer
-           - Pino Positivo (+): Conecte ao pino digital 8 no Arduino.  
-           - Pino Negativo (-): Conecte ao pino GND no Arduino.
+        Pino Positivo (+): Conecte ao pino digital 8 no Arduino.  
+        Pino Negativo (-): Conecte ao pino GND no Arduino.
     
 
 ## Instalação e Configuração
 
-        1.	Baixe e instale o Arduino IDE para escrever e carregar o código no Arduino.
-        2.	Conecte o Arduino ao seu computador através do cabo USB.
-        3.	Certifique-se de que todos os componentes estão conectados corretamente de acordo com o esquema do circuito.
-        4.	Carregue o código no Arduino e teste o funcionamento.
+        1. Baixe e instale o Arduino IDE para escrever e carregar o código no Arduino.
+        2. Conecte o Arduino ao seu computador através do cabo USB.
+        3. Certifique-se de que todos os componentes estão conectados corretamente de acordo com o esquema do circuito.
+        4. Carregue o código no Arduino e teste o funcionamento.
 
 
 ### Código
@@ -113,7 +113,7 @@ void playThankYouSound() {
 
 ## Equipe
 
-        • __Aline Henriques__: Frontend, criação de vídeos, organização e prototipação.
+        • Aline Henriques: Frontend, criação de vídeos, organização e prototipação.
         • Bruno Henrique Leite Braga: Hardware.
         • Glauco Santos Cerqueira Seixas: Hardware.
         • Pedro Augusto Cavalcanti de Souza: Auxílio na montagem, organização e testes.
