@@ -30,21 +30,21 @@ Para construir este projeto, você precisará dos seguintes componentes:
 
 Conecte os componentes conforme abaixo:
 
-	1.	Sensor Ultrassônico HC-SR04
-	• Trigger Pin (TRIG): Conecte ao pino digital 7 no Arduino.
-	• Echo Pin (ECHO): Conecte ao pino digital 6 no Arduino.
-	• VCC: Conecte ao pino de 5V no Arduino.
-	• GND: Conecte ao pino GND no Arduino.
+    1. **Sensor Ultrassônico HC-SR04**  
+       - Trigger Pin (TRIG): Conecte ao pino digital 7 no Arduino.  
+       - Echo Pin (ECHO): Conecte ao pino digital 6 no Arduino.  
+       - VCC: Conecte ao pino de 5V no Arduino.  
+       - GND: Conecte ao pino GND no Arduino.
 
-	2.	Servo Motor
-	• Sinal: Conecte ao pino digital 9 no Arduino.
-	• VCC: Conecte ao pino de 5V no Arduino.
-	• GND: Conecte ao pino GND no Arduino.
+    2. **Servo Motor**  
+       - Sinal: Conecte ao pino digital 9 no Arduino.  
+       - VCC: Conecte ao pino de 5V no Arduino.  
+       - GND: Conecte ao pino GND no Arduino.
 
-	3.	Buzzer
-	• Pino Positivo (+): Conecte ao pino digital 8 no Arduino.
-	• Pino Negativo (-): Conecte ao pino GND no Arduino.
-
+    3. **Buzzer**  
+       - Pino Positivo (+): Conecte ao pino digital 8 no Arduino.  
+       - Pino Negativo (-): Conecte ao pino GND no Arduino.
+    
 
 ## Instalação e Configuração
 
@@ -105,16 +105,17 @@ void playThankYouSound() {
 
 ## Descrição do Funcionamento
 
-	• O sensor ultrassônico utiliza os pinos 7 (Trigger) e 6 (Echo) para medir a distância de objetos à frente da lixeira.
-	• Quando a distância lida pelo sensor é menor ou igual a 20 cm:
-	• O servo motor, conectado ao pino 9, abre a tampa da lixeira, movendo-se para 180 graus.
-	• Um buzzer conectado ao pino 8 emite um som de agradecimento ao usuário.
-	• Após alguns segundos, se nenhum objeto for detectado próximo, a tampa retorna à posição inicial (0 graus).
+	## Descrição do Funcionamento
 
+    1. O sensor ultrassônico (HC-SR04) usa os pinos **7 (Trigger)** e **6 (Echo)** para medir a distância entre o sensor e um objeto próximo.
+    2. Se a distância medida for menor ou igual a **20 cm**, o sistema ativa o servo motor (conectado ao pino **9**) para abrir a tampa da lixeira.
+    3. O buzzer, conectado ao pino **8**, emite um som de agradecimento quando a tampa é aberta.
+    4. Após **2 segundos**, se não houver mais objetos detectados, a tampa retorna à posição inicial (0 graus).
+    Esse ciclo se repete enquanto o sensor continua detectando objetos próximos.
 
 ## Equipe
 
-	• Aline Henriques: Frontend, criação de vídeos, organização e prototipação.
-	• Bruno Henrique Leite Braga: Hardware.
-	• Glauco Santos Cerqueira Seixas: Hardware.
-	• Pedro Augusto Cavalcanti de Souza: Auxílio na montagem, organização e testes.
+    	•  Aline Henriques: Frontend, criação de vídeos, organização e prototipação.
+	•  Bruno Henrique Leite Braga: Hardware.
+	•  Glauco Santos Cerqueira Seixas: Hardware.
+	•  Pedro Augusto Cavalcanti de Souza: Auxílio na montagem, organização e testes.
